@@ -89,7 +89,7 @@
             display:flex;
             align-items:center;
         }
-        .days{
+        #days{
             font-size:150px;
             margin: 0 auto;
             font-family: 'Lobster', cursive;
@@ -169,7 +169,7 @@
                     padding-top:0px;
                     transform:translateY(-10px);
                 }
-                .days{
+                #days{
                     font-size: 187px;
                 }
                 .bottom_container {
@@ -198,7 +198,7 @@
         </div>
         <div class="bottom_container">
             <div class="days_holder center">
-                <h1 class="days">145</h1>
+                <h1 id="days"></h1>
             </div>
             <div class="days_holder center">
                 <h1 class="daystogo">days to go</h1>
@@ -225,6 +225,7 @@
         var distance = countDownDate - now;
         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 
+        document.getElementById('days').innerHTML = days;
 
 
         console.log(days);
