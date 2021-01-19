@@ -205,3 +205,23 @@ body, html {
         width: 300px;
     }
 }
+@media (min-width:1920px){
+    .picture {
+        max-width: 65vw;
+        padding-top: 10px;
+    }
+    #days {
+        font-size: 300px;
+    }
+    .daystogo {
+        font-size: 70px;
+    }
+    .date {
+     
+        font-size: 70px;
+    }
+    .title {
+      
+        width: 400px;
+    }
+}
