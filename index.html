@@ -24,7 +24,7 @@
     
     <div id="container">
         <div class="title_holder center">
-            <img class="title" src="title.png" alt="">
+            <img onclick="info()" class="title" src="title.png" alt="">
         </div>
         <div class="picture_holder">
             <img class="picture" src="picture.png" alt="">
@@ -65,6 +65,10 @@
 
 
         console.log(days);
+
+        function info(){
+            alert(window.innerWidth +" x " +window.innerHeight);
+        }
     </script>
     <!-- <h1 class="weddingdate">May 28th, 2021</h1> -->
 
